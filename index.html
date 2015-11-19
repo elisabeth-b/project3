@@ -90,6 +90,9 @@ body {
     overflow-x: hidden;
 }
 /*- Navigation ends here -*/
+	.clearfix{
+		padding:400px;
+	}
 	#banner {
 		position: absolute;
 		top: 0px;
@@ -103,7 +106,6 @@ body {
 
 	}
 	.text{
-		margin-top: 0px;
 		position: fixed;
 		font-family:  Helvetica Neue;
 		font-size: 15px;
@@ -112,6 +114,7 @@ body {
 		padding-right: 60px;
 		padding-top: 40px;
   		text-align: center;
+  		margin: 0 auto;
 	}
 
 	h1{
@@ -119,6 +122,8 @@ body {
 		font-weight: lighter;
 		letter-spacing: 2px;
 		padding-bottom: 10px;
+		text-align: center;
+		max-width: 100%;
 	}
 
 .options{
@@ -172,6 +177,17 @@ height: auto;
 	margin: 0 auto;
 }
 
+.centered{
+	margin: 0 auto;
+	max-width: 100%;
+}
+@media only screen and (max-width: 1080px){
+	.clearfix{.clearfix{padding:0px;}}
+}
+@media only screen and (max-width: 580px) {
+	.clearfix {padding: 0px;}
+}
+
 html{
 	/*--background: url(http://i1383.photobucket.com/albums/ah294/rcvillo/Elisabeth%20web/homepag2%20copy_zpsybwx1xh1.jpg) no-repeat center center fixed; --*/
   	-webkit-background-size: cover;
@@ -205,8 +221,6 @@ text-decoration: none;}
   	
 
     <div class="text">
-    <div class="title">
-    </div>
 	<div class="container clearfix">
     	<h1>SELECT YOUR SORELLE</h1>
 		<div class="options">
