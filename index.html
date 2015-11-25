@@ -21,11 +21,12 @@
 		margin: 0;
 	}
 
-	/*- Navigation starts here -*/
+	/*- Mobile Navigation starts here -*/
 .navigation{
 	list-style: none;
 	font-family: Helvetica Neue;
 	font-weight: lighter;
+	color: white;
 	letter-spacing: .5px;
 	background: #1111;
 	width: 100%;
@@ -39,7 +40,7 @@
 	z-index: 0;
 	line-height: 50px;
 	padding-left: 25px;
-	padding-top: 50px
+	padding-top: 50px;
 }
 .site-wrap {
     min-width: 100%;
@@ -63,6 +64,7 @@
 .nav-trigger{
 	position: absolute;
 	clip: rect(0,0,0);
+	opacity: 0;
 }
 label[for="nav-trigger"] {
     position: absolute;
@@ -89,24 +91,23 @@ label[for="nav-trigger"] {
 body {
     overflow-x: hidden;
 }
-/*- Navigation ends here -*/
-	.clearfix{
-		padding:400px;
-	}
+/*- Mobile Navigation ends here -*/
+
+
 	#banner {
 		position: absolute;
 		top: 0px;
 		left: 0px;
 		right: 0px;
 		width: 100%;
-		height: 80px;
+		height: 130px;
 		z-index: -1;
 		background: white;
 		box-shadow: 0;
 
 	}
 	.text{
-		position: fixed;
+		max-width: 600px;
 		font-family:  Helvetica Neue;
 		font-size: 15px;
 		color: white;
@@ -121,9 +122,10 @@ body {
 		font-size: 25px;
 		font-weight: lighter;
 		letter-spacing: 2px;
-		padding-bottom: 10px;
+		padding-bottom: 20px;
 		text-align: center;
 		max-width: 100%;
+		color: white;
 	}
 
 .options{
@@ -181,11 +183,83 @@ height: auto;
 	margin: 0 auto;
 	max-width: 100%;
 }
-@media only screen and (max-width: 1080px){
-	.clearfix{.clearfix{padding:0px;}}
+/*-Desktop Nav-*/
+html,
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
 }
-@media only screen and (max-width: 580px) {
-	.clearfix {padding: 0px;}
+
+* {
+  box-sizing: border-box;
+}
+
+clearfix {
+  overflow=auto
+}
+
+body {
+  font-family:  Helvetica Neue;
+  font-weight: medium;
+  letter-spacing: 1px;
+}
+
+html {
+  font-size: 15px;
+}
+
+header .logo {
+  font-size: 3.6rem;
+}
+
+header {
+  background-color: #aaa;
+}
+
+header .logo {
+  text-align: center;
+  margin: 0px 0;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-top {
+  text-align: center;
+  font-size: 8pt;
+  margin-top: -82px;
+}
+.nav-top ul{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+.nav-top li {
+  display: inline-block;
+  padding: 30px 3%;
+}
+/*Desktop Nav ends here*/
+
+@media only screen and (min-width: 1024px) {
+	/*For Desktop */
+	. div #navigation{
+		width: 50%;
+
+	}
+}
+	/*For Mobile */
+@media only screen and (min-width: 600px; max-width: 1000px;) {
+	 #nav-top {display: none;} {
+
+	}
 }
 
 html{
@@ -197,17 +271,20 @@ html{
   	background-color: #000;
 }
 
-a {color: white;
-text-decoration: none;}
+a {text-decoration: none;}
+
   </style>
-  
+  <head>
+ </head>
+
   <body>
+
 <ul class="navigation">
     <li class="nav-item"><a href="index.html">HOME</a></li>
     <li class="nav-item"><a href="Page_2.html">SORELLE ON MONUMENT AVE.</a></li>
     <li class="nav-item"><a href="Page_3.html">SORELLE ON CONGRESS ST.</a></li>
     <li class="nav-item"><a href="Page_4.html">SORELLE IN CITY SQUARE</a></li>
-    <li class="nav-item"><a href="Page_5">CONTACT US</a></li>
+    <li class="nav-item"><a href="Page_5">CONTACT</a></li>
 </ul>
 
 <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -219,6 +296,15 @@ text-decoration: none;}
   	
   	<center><img id="logo" img src="http://i1383.photobucket.com/albums/ah294/rcvillo/Elisabeth%20web/LOGO_zpsm14cxezf.jpg"/></center>
   	
+  	   <div id="nav-top" class="nav-top">
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">SORELLE ON MONUMENT AVE.</a></li>
+      <li><a href="#">SORELLE ON CONGRESS ST.</a></li>
+      <li><a href="#">SORELLE IN CITY SQUARE</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+    </div>
 
     <div class="text">
 	<div class="container clearfix">
