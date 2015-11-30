@@ -21,6 +21,7 @@
 		margin: 0;
 	}
 
+
 	/*- Mobile Navigation starts here -*/
 .navigation{
 	list-style: none;
@@ -40,7 +41,7 @@
 	z-index: 0;
 	line-height: 50px;
 	padding-left: 25px;
-	padding-top: 50px;
+	padding-top: 10px;
 }
 .site-wrap {
     min-width: 100%;
@@ -51,10 +52,10 @@
     left: 0;
     z-index: 1;
     padding:15em;
-    background-image: linear-gradient(135deg, 
+    /*background-image: linear-gradient(135deg, 
                       rgb(0,0,0) 0%,
                       rgb(0,0,0) 0%,
-                      rgb(0,0,0) 0%);
+                      rgb(0,0,0) 0%);*/
     background-size: 500%;
     padding: 0px;
     padding-left: 0;
@@ -100,16 +101,16 @@ body {
 		left: 0px;
 		right: 0px;
 		width: 100%;
-		height: 130px;
+		height: 170px;
 		z-index: -1;
 		background: white;
+		box-shadow: 0;
 		box-shadow: 0;
 
 	}
 	.text{
 		max-width: 600px;
 		font-family:  Helvetica Neue;
-		font-size: 15px;
 		color: white;
 		padding-left:60px;
 		padding-right: 60px;
@@ -122,80 +123,65 @@ body {
 		font-size: 25px;
 		font-weight: lighter;
 		letter-spacing: 2px;
-		padding-bottom: 20px;
+		padding-bottom: 0px;
 		text-align: center;
 		max-width: 100%;
 		color: white;
-	}
+		}
 
-.options{
-	font-weight: medium;
-	font-size: 12px;
-	padding-bottom: 0px;
-	padding-top: 0px;
-	line-height: 50px;
-}
+	.options{
+			font-weight: medium;
+			font-size: 12px;
+			padding-bottom: 0px;
+			padding-top: 0px;
+			line-height: 50px;
+			}
 
-.box{
-		border: 1px solid white;
-		box-sizing: border-box;
-		float: left;
+	.box{
+			border: 1px solid white;
+			box-sizing: border-box;
+			float: left;
+			width: 100%;
+			padding: 2px;
+			margin-top: 40px;
+			position: center;
+			text-align: center;
+
+			}
+
+	.box:	last-child {
+			margin: 0 auto;
+			padding: 0;
+			}
+
+	.logo{
 		width: 100%;
-		padding: 2px;
-		margin-top: 40px;
-		position: center;
-		text-align: center;
+		}
 
-}
+	#logo{
+		height: auto;
+		width: auto;
+		max-width: 75px;
+		max-height: 75px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		}
 
-	.box: last-child {
+	.cupimage{
+		padding-top: 325px;
 		margin: 0 auto;
-		padding: 0;
-	}
+		max-width: 100%;
+		}
 
-.logo{
+.background {
 	width: 100%;
-}
-#logo{
-height: auto;
-	width: auto;
-	max-width: 75px;
-	max-height: 75px;
-	padding-top: 5px;
-}
-.cupimage{
-	padding-top: 325px;
-	margin: 0 auto;
-	max-width: 100%;
-}
-.container {
-	margin: 0 auto;
-	padding-top: 20px;
+    height: 900px;
+    background-color: black;
+    background-size: cover;
 }
 
-.options{
-	padding-bottom: 0px;
-	vertical-align: center;
-	margin: 0 auto;
-}
-
-.centered{
-	margin: 0 auto;
-	max-width: 100%;
-}
 /*-Desktop Nav-*/
-html,
-body,
-h1,
-h2,
-h3,
-p,
-ul,
-li {
-  margin: 0;
-  padding: 0;
-}
-
+/*for responsive boxes-*/
 * {
   box-sizing: border-box;
 }
@@ -203,6 +189,7 @@ li {
 clearfix {
   overflow=auto
 }
+/*end for responsive boxes-*/
 
 body {
   font-family:  Helvetica Neue;
@@ -214,28 +201,16 @@ html {
   font-size: 15px;
 }
 
-header .logo {
-  font-size: 3.6rem;
+h1 {
+	padding-top: 15px;
 }
 
-header {
-  background-color: #aaa;
-}
-
-header .logo {
-  text-align: center;
-  margin: 0px 0;
-}
-
-header a {
-  text-decoration: none;
-  color: black;
-}
 
 .nav-top {
   text-align: center;
   font-size: 8pt;
   margin-top: -82px;
+  color: black;
 }
 .nav-top ul{
   max-width: 1000px;
@@ -248,30 +223,30 @@ header a {
 }
 /*Desktop Nav ends here*/
 
-@media only screen and (min-width: 1024px) {
-	/*For Desktop */
-	. div #navigation{
-		width: 50%;
-
-	}
-}
+@media screen and (max-width: 1024px) {
 	/*For Mobile */
-@media only screen and (min-width: 600px; max-width: 1000px;) {
-	 #nav-top {display: none;} {
+	.nav-top {display: none;
+
+	} 
+
+}
+	/*For Desktop */
+@media only screen (min-device-width: 1024px) {
+	 .navigation {display: none;
 
 	}
 }
 
-html{
-	/*--background: url(http://i1383.photobucket.com/albums/ah294/rcvillo/Elisabeth%20web/homepag2%20copy_zpsybwx1xh1.jpg) no-repeat center center fixed; --*/
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-  	background-color: #000;
-}
 
-a {text-decoration: none;}
+.nav-top li a {color: black;
+text-decoration: none;}
+
+.navigation li a{
+	color: black;
+	text-decoration: none;
+}
+.options  div a {color: white;
+text-decoration: none;}
 
   </style>
   <head>
@@ -305,7 +280,7 @@ a {text-decoration: none;}
       <li><a href="#">CONTACT</a></li>
     </ul>
     </div>
-
+<div class="background"/>
     <div class="text">
 	<div class="container clearfix">
     	<h1>SELECT YOUR SORELLE</h1>
@@ -332,7 +307,5 @@ a {text-decoration: none;}
 </div>
   </div>
   </div>
-  </div>
-  </div> 
   </body>
 </html>
