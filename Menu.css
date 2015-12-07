@@ -142,13 +142,14 @@ body {
 	}
 
 	.food_menu{
-		font-size: 10px;
+		font-size: 12px;
 		font-weight: lighter;
 		letter-spacing: 2px;
 		padding-bottom: 0px;
 		text-align: left;
 		max-width: 100%;
 		color: white;
+		padding-left: 40px;
 	}
 
 	.menu {
@@ -208,7 +209,7 @@ ul {
 
 .nav-top {
   text-align: center;
-  font-size: 8pt;
+  font-size: 9pt;
   margin-top: -82px;
   color: black;
 }
