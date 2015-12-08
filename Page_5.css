@@ -1,4 +1,3 @@
-
 <style>
 	/*- static, relative, absolute, fixed -*/
 	html, body{
@@ -143,7 +142,7 @@ body {
 	}
 
 	.food_menu{
-		font-size: 12px;
+		font-size: 10px;
 		font-weight: lighter;
 		letter-spacing: 2px;
 		padding-bottom: 0px;
@@ -180,8 +179,8 @@ body {
 
 	#logo{
 		height: auto;
-		width: auto;
-		max-width: 75px;
+		width: 75px;
+		max-width: 60px;
 		max-height: 75px;
 		padding-top: 15px;
 		padding-bottom: 0px;
