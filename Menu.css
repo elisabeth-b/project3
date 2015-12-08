@@ -1,4 +1,4 @@
-<style>
+	<style>
 	/*- static, relative, absolute, fixed -*/
 	html, body{
 		box-sizing: border-box;
@@ -174,14 +174,15 @@ body {
 			line-height: 50px;
 			}
 
+
 	.logo{
 		width: 100%;
 		}
 
 	#logo{
 		height: auto;
-		width: auto;
-		max-width: 75px;
+		width: 75px;
+		max-width: 60px;
 		max-height: 75px;
 		padding-top: 15px;
 		padding-bottom: 0px;
